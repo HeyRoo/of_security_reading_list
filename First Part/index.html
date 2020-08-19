@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="HeyRoo">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>First Part &mdash; HeyRoo</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href=".." class="site-name"> HeyRoo</a>
+                </div>
+                <div class="search">
+                    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    </form>
+</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><a class="nav-item" href="..">The Security Of OpenFlow: Reading List</a></li>
+                    <li class="toctree-l1 current">
+<a class="nav-item current" href="./">First Part</a>
+<ul class="subnav">
+</ul></li>
+                    <li class="toctree-l1">
+<a class="nav-item" href="../Second%20Part/">Second Part</a></li>
+                    <li class="toctree-l1">
+<a class="nav-item" href="../Third%20Part/">Third Part</a></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="link">
+        <a href="https://github.com/HeyRoo/of_security_reading_list/" class="fa fa-github"> GitHub</a>
+    </div>
+    <div class="previous"><a href="..">&laquo; Previous</a></div>
+    <div class="next"><a href="../Second%20Part/">Next &raquo;</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href=".." class="site-name"> HeyRoo</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    
+</ul>
+</nav>
+                <div id="content"><ul>
+<li>
+<p>Tooska Dargahi et al.: A Survey on the Security of Stateful SDN Data Planes ,IEEE,2019.</p>
+<p>Keywords: Data plane,data plane abstractions,data plane architectures,data plane flexibility,data plane implementations,data plane languages,data plane programmability,deeply programmable netoworks,description languages,energy consumption,energy efficiency,hardware-based implementations,measurement,monitoring,network virtualization,network functions virtualization,networking technologies, </p>
+<p>Software-Defined Networking (SDN) emerged as an attempt to introduce network innovations faster, and to radically simplify and automate the management of large networks. SDN traditionally leverages OpenFlow as device-level abstraction. Since OpenFlow permits the programmer to “just” abstract a static flow-table, any stateful control and processing intelligence is necessarily delegated to the network controller. Motivated by the latency and signaling overhead that comes along with such a two-tiered SDN programming model, in the last couple of years several works have proposed innovative switch-level (data plane) programming abstractions capable to deploy some smartness directly inside the network switches, e.g., in the form of localized stateful flow processing. Furthermore, the possible inclusion of states and state maintenance primitives inside the switches is currently being debated in the OpenFlow standardization community itself. In this paper, after having provided the reader with a background on such emerging stateful SDN data plane proposals, we focus our attention on the security implications that data plane programmability brings about. Also via the identfication of potential attack scenarios, we specfically highlight possible vulnerabilities specfic to stateful in-switch processing (including denial of service and saturation attacks), which we believe should be carefully taken into consideration in the ongoing design of current and future proposals for stateful SDN data planes.</p>
+<p>SDN传统上将OpenFlow用作“设备级”的抽象。由于OpenFlow只允许程序员提取静态流表，因此对于任何有状态的控制和处理只能交予控制器处理。为了解决延时大及信号开销大这两个问题，近几年的工作中提出了创新的数据平面编程抽象，能直接在交换机内部部署智能功能，如局部状态流等。本文为读者提供了关于有状态SDN数据平面的知识，并分析了对于潜在的攻击场景及对攻击的防御措施。</p>
+</li>
+<li>
+<p>Carmelo Cascone et al.: Public Review for Relaxing state-access constraints in stateful programmable data planes,  SIGCOMM,2018.</p>
+<p>Keywords：Network data plane,programmable switch,SDN,NFV</p>
+<p>Supporting programmable stateful packet forwarding functions in hardware requires a tight balance between functionality and performance. Current state-of-the-art solutions are based on a very conservative model that assumes worst-case workloads. This finally limits the programmability of the system, even if actual deployment conditions may be very different from the worst-case scenario.</p>
+<p>We use trace-based simulations to highlight the benefits of accounting for specific workload characteristics. Furthermore, we show that relatively simple additions to a switching chip design can take advantage of such characteristics. In particular, we argue that introducing stalls in the switching chip pipeline enables stateful functions to be executed in a larger but bounded time without harming the overall forwarding performance. Our results show that, in some cases, the stateful processing of a packet could use 30x the time budget provided by state of the art solutions.</p>
+<p>在硬件中实现可编程有状态分组转发功能需要维持功能和性能的平衡目前最新的解决方案是基于一个比较保守的模型，该模型处理分组转发时假设环境处于最高的工作负载，这样限制了系统的可编程性。本文提出一个基于追踪的模型，能在特定负载下显著提高有状态处理的速度，而且不会损害整体转发性能。</p>
+</li>
+<li>
+<p>Peter Peresini et al.: Rule-Level Data Plane Monitoring With Monocle ,SIGCOMM,2015.</p>
+<p>Keywords：network data plane,SDN,rule monitor,control plane</p>
+<p>We present Monocle, a system that systematically monitors the network data plane, and verfies that it corresponds to the view that the SDN controller builds and tries to enforce in the switches. Our evaluation shows that Monocle is capable of fine-grained per-rule monitoring for the majority of rules. In addition, it can help controllers to cope with switches that exhibit transient inconsistencies between their control plane and data plane states.</p>
+<p>本文提出moncole网络数据平面监控系统，它能确认SDN控制器的视图与交换机的保持一致。此系统能执行大多数规则的细粒度监视，并能处理控制器控制平面与交换机数据平面的暂态不一致问题。</p>
+</li>
+<li>
+<p>Jiarong Xing et al.: Secure State Migration in the Data Plane ,SPIN,2020.</p>
+<p>Keywords：Programmable data planes, P4, State migration, Stream authentication, Network security</p>
+<p>Programmable data planes enable stateful packet processing at hardware speeds——a new capability central to many recent systems. However, protocols and systems that effectively manage data plane state remain underexplored. This paper considers the problem of secure state migration, which can serve as an important building block for state management tasks. It delivers data plane state from a source switch to a destination effectively without a software controller, while providing strong cryptographic guarantees on authenticity. Our protocol, P4Sync, tackles several technical challenges, such as adapting memory copy techniques in VM migration, offloading per-packet security operations to the data plane, and amortizing heavyweight cryptographic overheads over a batch of packets. Our initial validation shows that P4Sync has low traffic and memory overheads. challenges, such as adapting memory copy techniques in VM migration, offloading per-packet security operations to the data plane, and amortizing heavyweight cryptographic overheads over a batch of packets. Our initial validation shows that P4Sync has low traffic and memory overheads。</p>
+<p>许多最新系统允许可编程数据平面以硬件速度实现有状态的数据包处理，但是有效管理数据平面状态的协议和系统仍未得到开发。本文提出P4Sync协议以解决安全状态迁移的问题。P4Sync协议能使交换机在无软件控制器的情况下，将数据平面状态加密传输后传递到目的地。P4Sync解决了一些技术难题：例如在VM迁移中采用内存复制技术，将每个数据包的安全性操作交还数据平面，以及均衡分配重量级的加密开销，同时，P4Sync也具有较低的流量和内存开销。</p>
+</li>
+<li>
+<p>Ahmad Asseri .:Alleviating Eavesdropping Attacks in Software-Defined Networking Data Plane ,Mobysis.2017.</p>
+<p>Keywords：SDN,OpenFlow,Anti-Eavesdropping,Multipath Routing.</p>
+<p>Software-Defined Networking(SDN) is an emerging paradigm that introduces a concept of programmable networks to enhance the agility in networking management. By separating concerns of the data plane and the control plane, implementing network switching as packet forwarding, and using centralized software to logically control the entire networks, SDN makes it simpler to automate and configure the network to respond to high-level policy enforcement and dynamically changing network conditions. As SDN becomes more prevalent, its security issues are increasingly critical. Eavesdropping attacks are one of the most common and important network attacks because they are relatively easy to implement and their effects can escalate to more severe attacks. This paper addresses the issue of how to cope with eavesdropping attacks in the SDN data plane by using multiple routing paths to reduce the severity of data leakage. While this existing approach appears to be considerably effective, our simple analysis uncovers that without a proper strategy of data communication, it can still lead to 100% of data exposure. The paper describes a remedy along with illustrations both analytically and experimentally. The results show that our proposed remedy can avoid such catastrophe and further reduces the percentage of risk from data exposure approximately by a factor of 1/n where n is the number of alternate disjoint paths.</p>
+<p>窃听攻击是最常见，最重要的网络攻击之一。本文解决了如何通过使用多个路由路径来减少数据泄漏，以应对SDN数据平面中的窃听攻击的问题。尽管这是一种有效的方法，但如果没有适合的数据通信策略，它仍然会导致100%数据泄露。本文在分析和实验上都描述了一种补救措施。结果表明，我们提出的补救措施可以避免数据泄露并降低泄露百分比。数据泄露的风险e大约为1 / n倍，其中n是交替不相交路径的数量。</p>
+</li>
+<li>
+<p>Jiarong Xing et al.: Architecting Programmable Data Plane Defenses into the Network with FastFlex ,Mobysis,2019.</p>
+<p>Keywords:data plane,programmable data plane</p>
+<p>This paper is motivated by the ever increasing scale and diversity of attacks that are best handled by the network infrastructure. FastFlex builds upon recent progress, which has developed a variety of network defenses in programmable data planes, and takes this trend one step further: it aims to develop architectural support for these defenses as a first-class citizen. We envision that the network architecture would support these defenses as naturally as it does routing——as the network routes traffic end-to-end, it also turns the defenses on and off as needed for attack mitigation. We propose a key abstraction: the multimode data plane. Normally, it operates under optimal configurations computed by centralized control, but upon attacks, it performs distributed mode changes entirely in data plane for mitigation. Mixed-vector attacks would trigger co-existing modes at different regions of the network, and attacks that rapidly change would be met with equally fast mode adaptations. We sketch this vision, discuss the opportunities and challenges it involves, and present a use case on link-flooding defense.</p>
+<p>优质的网络基础结构可以应对不断扩大的攻击规模和多样性，FastFlex以最新的技术为基础，设想网络体系结构支持这些防御措施，并可以根据阻断攻击的需要开启或关闭这些防御措施。本文提出了一个关键的抽象：多模数据平面。通常，它在由集中控制计算出的最佳配置下运行，但是在受到攻击时，它会完全在数据平面上更改为分布式模式以降低风险提出FastFlex网络防御架构，提出多模式数据平面的概念，运用FastFlex架构能使网络受到攻击时在数据平面上执行分布式模式来缓解攻击，并适应攻击的快速变换。</p>
+</li>
+<li>
+<p>Niranjhana Narayanan et al.: Mitigation of security attacks in the SDN data plane using P4-enabled switches ,Mobysis,2019.</p>
+<p>Keywords:P4,programmable data planes</p>
+<p>This paper presents a study and demonstration of some of the commonly seen internal security attacks and related countermeasures using P4, a dataplane programming language. The idea is that the vulnerabilities arising in programmable data planes are sufficiently mitigated with this P4 implementation. This also provides users with the flexibility to add or drop security features in the deployed switches, better visibility into the defense system owing to its open source nature and the portability of these P4 programs across many different vendors and devices. We evaluate our P4 code on software and hardware switches to detect IP-address spoofing attacks. The results show that attack packets are always detected and dropped, while the throughput remains unaffected and nearly constant across varying fractions of malicious packets injected in the network.</p>
+<p>本文介绍了使用数据平面编程语言P4对一些常见的内部安全攻击和相关对策进行的研究和演示。 运用P4可以充分减少可编程数据平面中产生的漏洞，还为用户提供在交换机中添加或删除安全功能的灵活性，P4凭借其开源特性以及P4程序在许多不同供应商和设备之间的可移植性，在防御系统中经常被使用。我们在软件和硬件交换机上评估我们的P4代码，以检测IP地址欺骗攻击。结果表明，攻击包总是被检测到并被丢弃，而吞吐量却不受影响。</p>
+</li>
+<li>
+<p>Wassim Itani et al.: Network Programming and Probabilistic Sketching for Securing the Data Plane ,Mobysis,2018</p>
+<p>Keywords:cloud security,data plane,SDN</p>
+<p>This paper presents VISKA, a cloud security service for dynamically detecting malicious switching elements in software defined networking (SDN) infrastructures. The main contributions of VISKA lie in (1) utilizing network programming and secure probabilistic sketching in SDN environments to dynamically detect and isolate parts of the data plane that experience malicious behavior, (2) applying a set of focused packet probing and sketching mechanisms on isolated network partitions/views rather than focusing the security mechanisms on the whole physical network, (3) efficiently analyzing the network behavior of the resulting views by recursively partitioning them in a divide-and-conquer fashion to logarithmically reduce the problem size in order to localize abnormal/malicious switching units, and (4) providing an attack categorization module that analyzes live ingress/egress traffic of the maliciously detected switch(es) solely to identify the specific type of attack, rather than inspecting the whole network traffic as is done in traditional intrusion detection systems. This significantly enhances the performance of attack detection and reduces the load on the controller. A testbed prototype implementation is realized on the Mininet network emulator. The experimental analysis corroborated the algorithms’ convergence property using the linear and FatTree topologies with network sizes of up to 250 switches. Moreover, an implementation of the attack categorization module is realized and achieved an accuracy rate of over 90% for the different attack types supported.</p>
+<p>本文介绍了VISKA，这是一种云安全服务，用于动态检测软件定义网络（SDN）基础结构中的恶意交换元素。 VISKA的主要贡献在于：</p>
+<p>（1）在SDN环境中利用网络编程和安全概率素描来动态检测和隔离经历恶意行为的数据平面部分。</p>
+<p>（2）在隔离状态下应用一组集中的数据包探测和素描机制网络分区/视图，而不是将安全机制集中在整个物理网络上。</p>
+<p>（3）通过以分而治之的方式对结果图进行递归划分，从而有效地分析结果图的网络异常行为/恶意交换单元。</p>
+<p>（4）提供攻击分类模块，该模块可以分析恶意检测到的交换机的实时入/出流量，而且仅用于识别特定的攻击类型，而不是像检查网络中那样检查整个网络流量传统的入侵检测系统。这显著提高了攻击检测的性能并减少了控制器上的负载。</p>
+</li>
+<li>
+<p>Johannes Krude.: Optimizing Data Plane Programs for the Network ,Mobysis,2019.</p>
+<p>Keywords: programmable switches , eBPF , program optimization</p>
+<p>With the move of Software-defined networking from fixed to programmable data planes, network functions are written with P4 or eBPF for targets such as programmable switches, CPU based flow processors and commodity CPUs. These data plane programs are, however, limited in per-packet time budget(e.g., 67.2 ns at 10GbE) and program size, making program optimization imperative. Existing approaches focus on optimizing the distribution of flow rules in fixed data planes [4] or they are limited to a single switch. We see great potential in integrating the network topology into program optimization.</p>
+<p>随着软件定义网络从静态数据平面到可编程数据平面的转变，现通常用P4或eBPF编写针对可编程交换机，基于CPU的流处理器和商用CPU等设备的网络功能。 但是，这些数据平面程序的每个数据包时间预算（例如10GbE时为67.2 ns）和程序大小受到限制，因此必须进行程序优化。现有方法集中于优化静态数据平面中流规则的分布。我们团队发现将网络拓扑集成到程序优化中的巨大潜力。</p>
+</li>
+<li>
+<p>Qi Li,Yanyu et al.: Security Policy Violations in SDN Data Plane ,Mobysis,2018.</p>
+<p>Keywords: SDN, data plane, policy violation</p>
+<p>Software-defined networking SDN utilizes a centralized controller to distribute packet processing rules to network switches. However, rules are often generated by the applications developed by different organizations, so they may conflict with each other in data plane and lead to violations with security rules. The problem is similar to firewall conflicts in IP networks. Rule conflict resolution should incur negligible process delay, such that all rules can be correctly and safely enforced in the data plane in real time. However, since SDN allows users to use more than 35 fields to specify rules including field transition rules, it is much more complicated to prevent enforcement of SDN rules from violating with security rules than to resolve firewall rule violation, and in particular, field transition rules are enforced. Therefore, it is extremely difficult to resolve such rule conflicts in real time before the rules are installed in SDN data plane. In this paper, we investigate the rule conflict problem in SDN and identify new covert channel attacks due to rule conflicts. To the end, we propose the covert channel defender CCD that prevents covert channel attacks by verifying and resolving rule conflicts. Specifically, CCD tracks all rule insertion and modification messages from applications running on the controller. It analyzes the correlation among rules based on multiple packet header fields and resolves any identified rule conflict in real time before rule installation. We implement CCD with the Floodlight controller and evaluate its performance with the real-world Stanford topology. We show that CCD can efficiently detect and prevent rule conflicts in the data plane that may raise covert channels within hundreds of microseconds and brings small overhead to the packet delivery.</p>
+<p>SDN利用集中式控制器将数据包处理规则分发到网络交换机。但是，规则通常是由不同组织开发的应用程序生成，因此它们可能在数据平面中相互冲突并导致违反安全规则。在本文中，我们对SDN中的规则冲突问题进行分析，并发现了由于规则冲突而引起的新的隐蔽通道攻击。最后，我们提出了秘密通道防御CCD，实验结果表明，CCD可以通过验证和解决规则冲突来防止秘密通道攻击。</p>
+</li>
+</ul></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href=".." title="The Security Of OpenFlow: Reading List"><span>Previous</span></a></div>
+        <div class="next"><a href="../Second%20Part/" title="Second Part"><span>Next</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+    <script src="../search/main.js"></script>
+</body>
+
+</html>

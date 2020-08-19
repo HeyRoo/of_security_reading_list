@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="HeyRoo">
+    <link rel="shortcut icon" href="../favicon.ico">
+    <title>Third Part &mdash; HeyRoo</title>
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Lato:400,700">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/tonsky/FiraCode@1.206/distr/fira_code.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.8.1/css/v4-shims.css">
+    <link rel="stylesheet" href="../css/theme.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+    <script src="//code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+    <script>
+        hljs.initHighlightingOnLoad();
+    </script> 
+</head>
+
+<body ontouchstart="">
+    <div id="container">
+        <aside>
+            <div class="home">
+                <div class="title">
+                    <button class="hamburger"></button>
+                    <a href=".." class="site-name"> HeyRoo</a>
+                </div>
+                <div class="search">
+                    <div role="search">
+    <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+        <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+    </form>
+</div>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul class="root">
+                    <li class="toctree-l1"><a class="nav-item" href="..">The Security Of OpenFlow: Reading List</a></li>
+                    <li class="toctree-l1">
+<a class="nav-item" href="../First%20Part/">First Part</a></li>
+                    <li class="toctree-l1">
+<a class="nav-item" href="../Second%20Part/">Second Part</a></li>
+                    <li class="toctree-l1 current">
+<a class="nav-item current" href="./">Third Part</a>
+<ul class="subnav">
+</ul></li>
+                </ul>
+            </nav>
+            <div class="repo">
+    <div class="link">
+        <a href="https://github.com/HeyRoo/of_security_reading_list/" class="fa fa-github"> GitHub</a>
+    </div>
+    <div class="previous"><a href="../Second%20Part/">&laquo; Previous</a></div>
+</div>
+        </aside>
+        <div id="spacer"><button class="arrow"></button></div>
+        <main>
+            <div class="home-top">
+                <button class="hamburger"></button>
+                <a href=".." class="site-name"> HeyRoo</a>
+            </div>
+            <div id="main">
+                <nav class="breadcrumbs">
+<ul>
+    
+</ul>
+</nav>
+                <div id="content"><ul>
+<li>
+<p>Wendi Feng et al.: Enhancing Security with Programmable Data plane Enabled Hybrid SDN, ACM International Conference on Emerging Networking Experiments and Technologies.2019</p>
+<p>In this paper, they propose Clé, a programmable dataplane (PD) enabled hybrid SDN security enhancement solution. Clé consists of a smart algorithm to select LSes to upgrade, a unified controller that automatically "attracts" traffic to programmable SDN switches, and the security network functions combined PD that can directly detect and mitigate threats without degrading the performance. 
+本文提出了一种基于可编程数据通道(PD)的混合型 SDN 安全增强解决方案 clé。Clé 包括一个智能算法来选择要升级的 lse，一个统一的控制器自动“吸引”流量到可编程 SDN 交换机，以及安全网络功能结合 PD，可以直接检测和减轻威胁，而不会降低性能。</p>
+</li>
+<li>
+<p>Chanhee Lee et al.: A New Framework For Detecting Malicious SDN Applications. International Conference on Network Protocols.2018</p>
+<p>In this paper, we propose a novel system, called Indago, which statically analyzes SDN applications to model their behavioral profiles, and finally, it automatically detects malicious SDN applications with a machine learning approach. 
+本文提出了一种名为Indago的系统,该系统静态分析SDN应用程序的行为特征,最后采用机器学习的方法自动检测恶意SDN应用</p>
+</li>
+<li>
+<p>Cheng Zhang et al.: P4DB: On-the-fly Debugging of the Programmable Data Plane, International Conference on Network Protocols.2017</p>
+<p>This paper is devoted to on-the-fly debugging of runtime bugs for programmable data planes. they propose P4DB, a general debugging platform that empowers operators to debug P4 programs in three levels of visibility with rich primitives. By P4DB, operators can use the watch primitive to quickly narrow the debugging scope from the network level or the device level to the table level, then use the break and next primitives to decompose match-action tables and finely locate bugs。
+本文致力于可编程数据平面运行时错误的动态调试。他们提出了P4DB，这是一个通用的调试平台，允许操作员使用丰富的原语在三个可见性级别上调试P4程序。通过P4DB，操作员可以使用WATCH原语快速将调试范围从网络级或设备级缩小到表级，然后使用Break和Next原语分解匹配操作表并精确定位错误。</p>
+</li>
+<li>
+<p>Benjamin E. Ujcich et al.: Automated Discovery ofCross-Plane Event-Based Vulnerabilities in Software- Defined Networking. ISOC Network and Distributed System Security Symposium.2020</p>
+<p>They present EVENTSCOPE, a vulnerability detection tool that automatically analyzes SDN control plane event usage, discovers candidate vulnerabilities based on missing event-handling routines, and validates vulnerabilities based on data plane effects. 
+他们介绍了EVENTSCOPE，这是一个漏洞检测工具，自动分析SDN控制平面事件使用情况，发现基于丢失事件处理程序的候选漏洞并根据数据平面影响验证漏洞</p>
+</li>
+<li>
+<p>Menghao Zhang et al.: Poseidon: Mitigating Volumetric DDoS Attacks with Programmable Switches. ISOC Network and Distributed System Security Symposium.2020</p>
+<p>In this paper, they propose POSEIDON, a system that addresses these limitations in today’s DDoS defense. It leverages emerging programmable switches, which can be reconfigured in the field without additional hardware upgrade. Users of POSEIDON can specify their defense strategies in a modular fashion in the form of a set of defense primitives. 
+在这篇论文中，他们提出了Poseidon，这是一个解决当今DDoS防御中这些局限性的系统。它利用新兴的可编程交换机，无需额外的硬件升级即可现场重新配置。Poseidon的用户可以以一组防御原语的形式以模块化方式指定他们的防御策略</p>
+</li>
+<li>
+<p>Jiahao Cao et al.: When Match Fields Do Not Need to Match: Buffered Packets Hijacking in SDN, ISOC Network and Distributed System Security Symposium.2020</p>
+<p>In this paper, they identify a new vulnerability on flow rule installation in SDN, namely, buffered packet hijacking, which can be exploited by malicious applications to launch effective attacks bypassing all existing defense systems. The root cause of this vulnerability lies in that SDN systems do not check the inconsistency between buffer IDs and match fields when an application attempts to install flow rules. Thus, a malicious application can manipulate buffer IDs to hijack buffered packets even though they do not match any installed flow rules。
+在本文中,我们发现SDN中的流规则安装存在一个新的漏洞,即缓冲包劫持,它可以被恶意应用程序利用,从而绕过所有现有的防御系统发起有效的攻击。造成此漏洞的根本原因在于当应用程序试图安装流规则时,SDN系统不会检查缓冲区ID和匹配字段之间的不一致性。因此,恶意应用程序可以操纵缓冲区ID来劫持缓冲数据包,即使它们不匹配任何已安装的流规则。</p>
+</li>
+<li>
+<p>Qiao Kang et al.: Programmable In-Network Security for Context-aware BYOD Policies. Usenix Security Symposium.2020</p>
+<p>They present a new paradigm, programmable in-network security (Poise), which is enabled by the emergence of programmable switches. At the heart of Poise is a novel security primitive, which can be programmed to support a wide range of context-aware policies in hardware. Users of Poise specify concise policies, and Poise compiles them into different configurations of the primitive in P4. Compared with traditional SDN defenses, Poise is resilient to control plane saturation attacks, and it dramatically increases defense agility. 
+他们提出了一种新的范例，网络内可编程安全(Poise) ，它是由可编程交换器的出现而实现的。Poise 的核心是一个新颖的安全原语，可以通过编程来支持各种硬件上下文感知策略。Poise 的用户指定简明的策略，并将它们编译成 P4中原语的不同配置。与传统的 SDN 防御系统相比，“泰衡”具有较强的抗饱和攻击能力，并显著提高了防御灵活性。</p>
+</li>
+<li>
+<p>Jiahao Cao et al.：The CrossPath Attack: Disrupting the SDN Control Channel via Shared Links CrossPath. Usenix Security Symposium.2019</p>
+<p>For the first time in the literature, they propose the CrossPath attack that disrupts the SDN control channel by exploiting the shared links in paths of control traffic and data traffic. In this attack, crafted data traffic can implicitly disrupt the forwarding of control traffic in the shared links
+在文献中，他们首次提出了通过利用控制流量和数据流量路径中的共享链路来干扰 SDN 控制信道的交叉路径攻击。在这种攻击中，精心制作的数据流可能会隐式破坏共享链路中控制流量的转发</p>
+</li>
+<li>
+<p>Taejune et al.: DPX: Data-Plane eXtensions for SDN Security Service Instantiation. Detection of Intrusions and Malware &amp; Vulnerability Assessment.2019</p>
+<p>they propose a new SDN-based data plane architecture called DPX that natively supports security services as a set of abstract security actions that are then translated to OpenFlow rule sets。
+他们提出了一种新的基于SDN的数据平面架构，称为DPX，它将安全服务作为一组抽象的安全操作进行原生支持，然后将这些抽象的安全操作转换为OpenFlow规则集。</p>
+</li>
+<li>
+<p>Steven R. Gomez et al.: Controller-Oblivious Dynamic Access Control in Software-Defined Networks. The International Conference on Dependable Systems and Networks.2019</p>
+<p>Conventional network access control approaches are static.Such systems are unable to meaningfully stop or hinder motivated attackers seeking to spread throughout an enterprise network. To address this threat, they present Dynamic Flow Isolation (DFI), a novel architecture for supporting dynamic, fine-grained access control policies enforced in a Software-Defined Network (SDN). 
+传统的网络访问控制方法是静态的，这样的系统不能有效地阻止或阻止企图在整个企业网络中传播的有动机的攻击者。为了应对这一威胁，他们提出了动态流隔离(DFI)，这是一种新的体系结构，用于支持在软件定义网络(SDN)中实施的动态、细粒度访问控制策略。</p>
+</li>
+<li>
+<p>Richard Skowyra et al.: Effective Topology Tampering Attacks and Defenses in Software-Defined Networks. The International Conference on Dependable Systems and Networks.2018</p>
+<p>As Software-Defined Networking has gained increasing prominence, new attacks have been demonstrated which can corrupt the SDN controller's view of network topology.In this paper, we analyze two such defenses, TopoGuard and Sphinx, and present two new attacks, Port Probing and Port Amnesia, that can successfully bypass them. We then develop and present extensions to TopoGuard to make it resilient to such attacks. 
+随着软件定义网络(Software-Defined Networking)的日益突出，出现了破坏SDN控制器网络拓扑视图的新攻击，本文分析了TopGuard和Sphinx这两种防御方式，提出了两种可以成功绕过它们的新攻击方式，即端口探测攻击和端口失忆攻击。然后，我们开发并提供对TopGuard的扩展，以使其对此类攻击具有弹性</p>
+</li>
+<li>
+<p>Amir Alimohammadifar et al.: Stealthy Probing-Based Verification (SPV): An Active Approach to Defending Software Defined Networks Against Topology Poisoning Attacks. European Symposium on Research in Computer Security.2018</p>
+<p>rcently discovered vulnerabilities in OpenFlow Discovery Protocol (OFDP) show that malicious hosts and switches can poison the network view of the SDN controller and consequently lead to more severe security attacks, such as man-in-the-middle or denial of service. Existing solutions mostly rely on passive techniques, which only work for known attacking methods. In this paper, we propose a novel stealthy probing-based verification approach, namely, SPV, to detect fake links regardless of the attacking methods used to fabricate them. 
+最近发现的OpenFlow发现协议(OFDP)中的漏洞表明,恶意主机和交换机会毒害SDN控制器的网络视图,从而导致更严重的安全攻击,如中间人或拒绝服务。现有的解决方案大多依靠被动技术,而被动技术只适用于已知的攻击方法。在本文中,我们提出了一种新的基于隐身探测的验证方法，即SPV，用于检测假链路，而不考虑用来制造假链路的攻击方法</p>
+</li>
+<li>
+<p>Nicolae Paladi et al.: Trust Anchors in Software Defined Networks. European Symposium on Research in Computer Security.2018</p>
+<p>Often, software network elements are either themselves vulnerable to software attacks or can be compromised through the bloated trusted computing base. To address this, we protect the core security assets of network elements - authentication credentials and cryptographic context - by provisioning them to and maintaining them exclusively in isolated execution environments
+通常，软件网元本身要么容易受到软件攻击，要么会通过臃肿的可信计算基础受到威胁。为了解决这一问题，我们保护网络元素的核心安全资产(身份验证凭据和加密上下文)，方法是将它们配置到隔离执行环境中并以独占方式进行维护</p>
+</li>
+<li>
+<p>Kallol Krishna Karmakar et al.: Towards a Dynamic Policy Enhanced Integrated Security Architecture for SDN Infrastructure. IFIP/IEEE International Symposium on Integrated Network Management.2020</p>
+<p>This paper focuses on the design and implementation of an integrated security architecture for SDN based enterprise networks. The integrated security architecture uses a policy-based approach to coordinate different security mechanisms to detect and counteract a range of security attacks in the SDN
+本文重点研究了一种基于SDN的企业网络综合安全体系结构的设计与实现。集成安全体系结构使用基于策略的方法来协调不同的安全机制，以检测和对抗SDN中的一系列安全攻击</p>
+</li>
+<li>
+<p>Iman Akbari et al.: ATMoS: Autonomous Threat Mitigation in SDN using Reinforcement Learning. IFIP/IEEE International Symposium on Integrated Network Management.2020</p>
+<p>In this paper, we propose ATMoS, a general framework designed to facilitate the rapid design of RL applications for network security management using SDN. We evaluate our framework for implementing RL applications for threat mitigation, by showcasing the use of ATMoS with a Neural Fitted Q-learning agent to mitigate an Advanced Persistent Threat. 
+在本文中，我们提出了Atmos，这是一个通用框架，旨在促进使用SDN快速设计用于网络安全管理的RL应用程序。我们通过展示Atmos与神经适配Q-Learning代理的使用来缓解高级持续性威胁，来评估我们实施RL应用程序以缓解威胁的框架</p>
+</li>
+<li>
+<p>Ângelo Cardoso Lapolli et al.: Offloading Real-time DDoS Attack Detection to Programmable Data Planes. FIP/IEEE International Symposium on Integrated Network Management.2019</p>
+<p>In recent years, Distributed Denial-of-Service (DDoS) attacks have escalated both in frequency and traffic volume, with outbreaks reaching rates up to the order of terabits per second and compromising the availability of supposedly highly resilient infrastructure, Data plane programmability has emerged as a promising approach to help meeting these requirements as forwarding devices can be configured to execute algorithms and examine traffic at line rate. In this paper, we explore P4 primitives to design a fine-grained, low-footprint, and low-latency traffic inspection mechanism for real-time DDoS attack detection
+近年来，分布式拒绝服务(DDoS)攻击在频率和通信量上都不断升级，爆发速率高达每秒比特数量级，并危及本应具有高度弹性的基础设施的可用性，数据平面可编程性已成为帮助满足这些要求的一种很有前途的方法，因为转发设备可以配置为以线速执行算法和检查流量。在本文中，我们利用P4原语来设计一种细粒度、低占用空间、低延迟的流量检测机制，用于实时检测DDoS攻击</p>
+</li>
+<li>
+<p>Jiahao Cao et al.: Fingerprinting SDN Applications via Encrypted Control Traffic.  International Symposium on Recent Advances in Intrusion Detection.2019</p>
+<p>In this paper, we show an adversary can infer what applications run on SDN controllers by analyzing low-level and encrypted control traffic. Such information can help an adversary to identify valuable targets, know the possible presence of network defense, and thus schedule a better plan for a later stage of an attack
+在本文中，我们展示了攻击者可以通过分析低级和加密的控制流量来推断哪些应用程序在SDN控制器上运行。这样的信息可以帮助对手识别有价值的目标，了解可能存在的网络防御，从而为攻击的后期阶段制定更好的计划</p>
+</li>
+<li>
+<p>Menghao et al.:  Control Plane Reflection Attacks in SDNs: New Attacks and Countermeasures.  International Symposium on Recent Advances in Intrusion Detection.2019      <br />
+    In this paper, they present Control Plane Reflection Attacks to exploit the limited processing capability of SDN-enabled hardware switches. Moreover, we propose a two-phase probing-triggering attack strategy to make the reflection attacks much more efficient, stealthy and powerful. 
+    在本文中，他们提出了控制平面反射攻击，以利用支持SDN的硬件交换机有限的处理能力。此外，我们还提出了一种两阶段探测-触发攻击策略，使反射攻击更加高效、隐蔽和强大。</p>
+</li>
+</ul></div>
+                <footer>
+    <div class="footer-buttons">
+        <div class="previous"><a href="../Second%20Part/" title="Second Part"><span>Previous</span></a></div>
+    </div>
+    <div class="footer-note">
+        <p>
+            Built with <a href="http://www.mkdocs.org">MkDocs</a> using
+            <a href="https://github.com/daizutabi/mkdocs-ivory">Ivory theme</a>.
+        </p>
+    </div>
+</footer>
+            </div>
+        </main>
+    </div>
+    <script>var base_url = '..';</script>
+    <script src="../js/theme.js"></script>
+    <script src="../search/main.js"></script>
+</body>
+
+</html>
