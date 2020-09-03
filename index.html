@@ -46,13 +46,12 @@
 <li class="toctree-l2"><a class="nav-item toc" href="#_1">网络架构安全，检测，故障恢复</a></li>
 <li class="toctree-l2"><a class="nav-item toc" href="#_2">攻击检测</a></li>
 <li class="toctree-l2"><a class="nav-item toc" href="#_3">流量分析</a></li>
+<li class="toctree-l2"><a class="nav-item toc" href="#_4">综述</a></li>
+<li class="toctree-l2"><a class="nav-item toc" href="#_5">数据平面安全加密</a></li>
 </ul></li>
-                    <li class="toctree-l1">
-<a class="nav-item" href="First%20Part/">First Part</a></li>
-                    <li class="toctree-l1">
-<a class="nav-item" href="Second%20Part/">Second Part</a></li>
-                    <li class="toctree-l1">
-<a class="nav-item" href="Third%20Part/">Third Part</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="First%20Part/">First Part</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="Second%20Part/">Second Part</a></li>
+                    <li class="toctree-l1"><a class="nav-item" href="Third%20Part/">Third Part</a></li>
                 </ul>
             </nav>
             <div class="repo">
@@ -78,7 +77,7 @@
 <h2 id="of">OF交换机流表安全</h2>
 <ul>
 <li>
-<p>W. Feng et al.: "MEM: A Multi-Staged Eviction Mechanism of Flowtable for Software-Defined Datacenters," IEEE INFOCOM 2020 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS), Toronto, ON, Canada, 2020, pp.</p>
+<p>W. Feng et al.: "MEM: A Multi-Staged Eviction Mechanism of Flowtable for Software-Defined Datacenters," IEEE <strong>INFOCOM</strong> 2020 - IEEE Conference on Computer Communications Workshops (INFOCOM WKSHPS), Toronto, ON, Canada, 2020, pp.</p>
 <p>flow entries</p>
 <p>本文提出了一种基于SDDC流量特性的流表多级驱逐机制（MEM），其中包括分类，识别和驱逐阶段。根据流的持久状态和基本统计信息对流条目进行两次分类。然后，引入一个称为自动回归移动平均线（ARMA）的时间序列预测模型，以预测下一个时间段内流条目的未来状态。最后，预测出的最近未使用的流条目将被驱逐以减轻流表存储上的压力。</p>
 </li>
@@ -123,6 +122,11 @@
 <li>
 <p>M. Yu et al.: "Flow Table Security in SDN: Adversarial Reconnaissance and Intelligent Attacks," IEEE INFOCOM 2020 - IEEE Conference on Computer Communications, Toronto, ON, Canada, 2020, pp.</p>
 <p>本篇提出了一种针对openflow 流表的智能攻击模型，该模型利用流表的特定于高速缓存的行为来推断其内部配置和状态，然后相应地设计攻击参数。</p>
+</li>
+<li>
+<p>Q. Li.:Security Policy Violations in SDN Data Plane,TON,2018</p>
+<p>Keywords: SDN, data plane, policy violation</p>
+<p>SDN利用集中式控制器将数据包处理规则分发到网络交换机。但是，规则通常是由不同组织开发的应用程序生成，因此它们可能在数据平面中相互冲突并导致违反安全规则。在本文中，我们对SDN中的规则冲突问题进行分析，并发现了由于规则冲突而引起的新的隐蔽通道攻击。最后，我们提出了秘密通道防御CCD，实验结果表明，CCD可以通过验证和解决规则冲突来防止秘密通道攻击。</p>
 </li>
 </ul>
 <h2 id="_1">网络架构安全，检测，故障恢复</h2>
@@ -210,6 +214,42 @@
 <p>Ran Ben Basat et al.: 2019. Q-MAX: A Unified Scheme for Improving Network Measurement Throughput. In Proceedings of the Internet Measurement Conference ( IMC ’19 ). Association for Computing Machinery, New York, NY, USA, 322–336.</p>
 <p>keyword：Network algorithms</p>
 <p>线速运行的测量应用是网络测量领域的重大挑战。本文通过提供一种改善各种网络算法更新时间的统一机制来应对这一挑战。通过识别，研究和优化称为q-MAX的常见算法模式来做到这一点。目标是保持数据包流中的最大q值。论文对此问题进行正式分析，并介绍间隔和滑动窗口算法，这些算法具有最坏情况下的恒定更新时间。结论证明，与库算法相比，q-MAX算法执行X20的速度快得多，在真实的网络轨迹上，吞吐量最多可提高X12。实验在最先进的虚拟交换机Open vSwitch中实现了该方案。</p>
+</li>
+</ul>
+<h2 id="_4">综述</h2>
+<ul>
+<li>
+<p>Tooska Dargahi et al.: A Survey on the Security of Stateful SDN Data Planes, IEEE, 2019.</p>
+<p>Keywords: Data plane,data plane abstractions,data plane architectures,data plane flexibility,data plane implementations,data plane languages,data plane programmability,deeply programmable netoworks,description languages,energy consumption,energy efficiency,hardware-based implementations,measurement,monitoring,network virtualization,network functions virtualization,networking technologies,</p>
+<p>SDN传统上将OpenFlow用作“设备级”的抽象。由于OpenFlow只允许程序员提取静态流表，因此对于任何有状态的控制和处理只能交予控制器处理。为了解决延时大及信号开销大这两个问题，近几年的工作中提出了创新的数据平面编程抽象，能直接在交换机内部部署智能功能，如局部状态流等。本文为读者提供了关于有状态SDN数据平面的知识，并分析了对于潜在的攻击场景及对攻击的防御措施。</p>
+</li>
+</ul>
+<h2 id="_5">数据平面安全加密</h2>
+<ul>
+<li>
+<p>Jiarong Xing et al.: Secure State Migration in the Data Plane, SigComm workshop SPIN,2020.</p>
+<p>Keywords：Programmable data planes, P4, State migration, Stream authentication, Network security</p>
+<p>许多最新系统允许可编程数据平面以硬件速度实现有状态的数据包处理，但是有效管理数据平面状态的协议和系统仍未得到开发。本文提出P4Sync协议以解决安全状态迁移的问题。P4Sync协议能使交换机在无软件控制器的情况下，将数据平面状态加密传输后传递到目的地。P4Sync解决了一些技术难题：例如在VM迁移中采用内存复制技术，将每个数据包的安全性操作交还数据平面，以及均衡分配重量级的加密开销，同时，P4Sync也具有较低的流量和内存开销。</p>
+</li>
+<li>
+<p>Gang Liu.:P4NIS Improving network immunity against eavesdropping with programmable data planes,INFOCOM,2020</p>
+<p>Keywords: Protocols, Eavesdropping , Encryption , Internet , Servers</p>
+<p>由于超级计算机计算能力的提高，通过单一网络路径传输加密数据包很容易受到暴力攻击。能力出众的攻击者秘密窃听所有数据包，将数据包分类到不同的流中，对解密密钥进行穷举搜索，并从流中提取敏感的个人信息。本文提出了一种协议无关的数据包处理器(P4)的网络免疫方案(P4NIS)来抵抗窃听攻击。具体来说，P4NIS配备三道防线，提高网络免疫力。第一道防线是混淆转发，将不同网络路径中的所有流量分组无序地分发。第二道防线使用不同的加密算法加密数据包的传输端口字段。该加密技术可以将流量包从一个流分发到不同的流中，并干扰窃听者对其进行正确的分类。 第三道防线是P4NIS继承了基于加密策略的优势。运用可编程数据平面p4的基本案例，我们实现了P4NIS并对其性能进行了评估。实验结果表明，P4NIS能够显著增加窃听的难度，与现有机制相比，传输吞吐量提高了31.7%。</p>
+</li>
+<li>
+<p>Francesco Musumeci.:Machine-learning-assisted DDoS attack detection with P4 language,ICC,2020</p>
+<p>Keywords:Computer crime,Feature extraction,Real-time systems,Prediction algorithms,Support vector machines,Protocols,Metadata</p>
+<p>软件定义网络(SDN)在网络自动化,灵活性和资源利用率上拥有显著优势, SDN控制器被视为整个网络基础设施中最重要的部分,特别是当它们称为恶意的网络攻击（比如分布式拒绝服务(DDoS)）的目标。为了解决这个问题，在本文中，我们利用了P4编程语言所编写的有状态数据平面，平面中交换机的内存持续存储已处理数据包以直接在数据平面上执行攻击检测，SDN控制器仅参与少量工作。由于机器学习(ML)被认为是主要的异常检测方法，我们使用基于ML的分类来进行DDoS攻击检测，并在分类精度和训练/测试持续时间方面比较不同的ML算法。此外，我们结合ML和p4启用的状态数据平面设计了一个实时DDoS攻击检测模块，我们根据检测所需的延迟进行评估。我们考虑了三个实时场景，其中P4-enab1ed交换机以不同的方式精心设计接收到的数据包，即数据包镜像、数据包头镜像和p4 -元数据提取。数值结果表明，采用P4可以显著降低延迟。</p>
+</li>
+<li>
+<p>Song Wang.:SECOD: SDN sEcure control and data plane algorithm for detecting and defending against DoS attacks,IFIP Networking,2018</p>
+<p>Keywords:SDN,OpenFlow,Security,Dos Attack</p>
+<p>虽然SDN (Software-Defined Networking, SDN)越来越流行，但它也容易受到诸如拒绝服务(Denial of Service, DoS)等安全攻击。由于在SDN网络中，控制平面与数据平面是隔离的，DoS攻击者可以很容易地将控制平面作为攻击目标并破坏网络基础设施以及数据平面，从而降低用户的服务质量(QoS)。在之前的工作中，我们介绍了SECO，一种SDN安全控制器算法，用于检测和防御DoS攻击。仿真结果表明，SECO成功地抵御了DoS攻击。在本文中，我们提出了SDN安全控制与数据平面(SECOD)，它是SECO的改进版本。在SECO的基础上，SECOD引入了新的触发器，在控制和数据层面检测和防止DoS攻击。利用基于sdn的硬件测试台、基于openflow的交换机和RYU控制器实现和测试SECOD，获取真实的硬件和软件信息。结果表明，SECOD成功检测并有效降低了DoS对SDN网络的攻击，与未受攻击的网络相比，数据平面性能保持在99.72%。</p>
+</li>
+<li>
+<p>Aldo Febro.: Distributed SIP DDoS Defense with P4,WCNC,2019</p>
+<p>Keywords:SIP,DoS,DDoS,SDN,P4,data plane,control plane</p>
+<p>SIP DDoS攻击数量的不断增加，对公共通信基础设施构成了真正的威胁。建立防御的标准做法是在被攻击目标(即受害者的位置)附近进行防御部署。这种方法很难跟上不断增长的数量和攻击复杂性。为了更好地为未来的攻击做准备，需要分散工作负载，并且攻击需要尽可能靠近攻击源（远离受害者）以减轻攻击强度。本文通过对数据平面编程(P4)和以太网交换机控制平面编程的实验，在每个交换机端口上提供对SIP INVITE DDoS攻击的首跳检测和防御能力。这种方法创建一个分布式或基于源的防御组件，可以将其添加至现有的基于目标的组件中，以创建一个更全面的整体解决方案，该解决方案可扩展、实惠，以更好地应对未来的SIP DDoS攻击。</p>
 </li>
 </ul></div>
                 <footer>
